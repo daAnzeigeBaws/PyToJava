@@ -1,0 +1,46 @@
+####################################################################
+####################################################################
+##                         Version 0.0.2                          ##
+####################################################################
+####################################################################
+
+Features:
+
+-> syntax conversion:
+	* boolean related keywords and characters are now converted
+	* 'None' is converted into 'null'
+	* a class structure is added
+	* a main() method enclosing each orphan line is now added
+
+-> restructured classes:
+	* added Bifs class to convert BIFs (Built in Functions)
+	* added ConversionUtils class and outsourced the getPairPosition() method to it
+	* added Struct class and outsorced structure related conversions to it e.g. def, if, for
+
+-> methods:
+
+- abs():
+	* added to Bifs class
+	* converts into Math.abs()
+
+- isinstance():
+	* added to Bifs class
+	* converts into instanceof statement
+
+- parsePrint():
+	* outsourced to Bifs class
+	* renamed to print()
+	* included end of line argument
+
+- range():
+	* added to Bifs class
+	* creates a method getRange(), which returns an integer list
+	* converts into a method call of getRange()
+
+- round():
+	* added to Bifs class
+	* converts into Math.round()
+
+- str():
+	* added to Bifs class
+	* converts into "" +
