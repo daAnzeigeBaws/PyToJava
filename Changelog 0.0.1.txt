@@ -1,0 +1,12 @@
+####################################################################
+####################################################################
+##                   Initial Draft of PyToJava                    ##
+##  This program's goal is to convert .py files into .java files  ##
+####################################################################
+####################################################################
+
+Features:
+
+- converts basic print() statements correctly
+- detects void def structs and converts them into functions
+- converts quotes and double doublequotes into doublequotes
